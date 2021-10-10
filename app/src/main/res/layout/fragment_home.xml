@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".ui.home.HomeFragment">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:layout_marginTop="8dp"
+        android:stretchColumns="x">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:padding="16dp"
+            android:background="@drawable/border"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/balance_statement"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:weightSum="2"
+            android:background="@drawable/border"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_gravity="start"
+                android:textAlignment="textStart"
+                android:text="@string/expense"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/exp"
+                android:layout_marginStart="20dp"
+                android:gravity="end"
+                android:text="text"
+                android:layout_gravity="end"
+                android:textAlignment="textEnd"
+                android:textColor="#990000"
+                android:textSize="16sp" />
+
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:weightSum="2"
+            android:background="@drawable/border"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:layout_gravity="start"
+                android:textAlignment="textStart"
+                android:layout_height="wrap_content"
+                android:text="@string/income"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:textAlignment="textEnd"
+                android:id="@+id/income"
+                android:textColor="#00873E"
+                android:textSize="16sp" />
+        </TableRow>
+
+
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:weightSum="2"
+            android:background="@drawable/border"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/balance"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:textAlignment="textEnd"
+              android:id="@+id/balance"
+                android:textColor="#5779b6"
+                android:textSize="16sp" />
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</RelativeLayout>
